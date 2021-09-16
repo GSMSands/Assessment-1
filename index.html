@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Assessment 1 Intro to IT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2f2f2;
+
+    }
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      border-color: #2E2D4D;
+      background-color: #2E2D4D;
+      color: white;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 190vh
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #2E2D4D;
+      height: 100%;
+      color: white;
+
+    }
+
+    .sidenav ul {
+      text-align: left;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #F2E7C9;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+
+      }
+
+      .row.content {
+        height: auto;
+      }
+    }
+
+    img {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .nav-tabs .active a {
+      background-color: #DA667B;
+
+    }
+
+    .martialartsimage {
+      padding: 0.5em;
+      height: 350px;
+      border-style: solid;
+      border-width: medium;
+      border-color: #BEB2C8;
+      margin: 20px 0 0;
+
+    }
+
+    .my-profile-picture {
+      border-style: solid;
+      border-width: medium;
+      border-color: #BEB2C8;
+      margin: 20px 0 0;
+    }
+
+    .ideal-job-ad {
+      border-style: solid;
+      border-width: medium;
+      border-color: #BEB2C8;
+
+    }
+
+    .big-5-factors {
+      border-style: solid;
+      border-width: medium;
+      border-color: #BEB2C8;
+      margin: 20px 0 20px;
+    }
+
+    .intj-personality {
+      border-style: solid;
+      border-width: medium;
+      border-color: #BEB2C8;
+      margin: 20px 0 20px;
+    }
+
+    .personality-container {
+      margin-top: 3em;
+    }
+
+    .personality-row {
+      margin-top: 1em;
+    }
+
+    .logo-image {
+      margin: 0;
+    }
+
+    hr {
+      border-top-color: #2E2D4D;
+    }
+
+    .ideal-job-ad {
+      width: 95%;
+
+    }
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus {
+      background-color: #B1E5F2;
+    }
+
+    h1 {
+      color: #12685E;
+    }
+
+    h3 {
+      color: #12685E;
+    }
+
+    p {
+
+      font-family: 'Lato', sans-serif;
+      font-size: medium;
+    }
+
+    ul {
+      font-family: 'Lato', sans-serif;
+      ;
+      font-size: medium;
+    }
+
+    .job-ad-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+
+    .job-ad-container:hover .job-ad-overlay {
+      opacity: 0.85;
+    }
+
+    .job-ad-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Assessment 1 Introduction to IT</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+
+        <img class="my-profile-picture" src="my-profile-picture.jpg" alt="my profile picture" />
+        <strong>Gesina Susanna Maria Sands
+          <ul>
+            <li> #: s3921234</li>
+            <li> e: <a href="mailto:s3921234@rmit.edu.au" target="_blank">s3921234@rmit.edu.au</a></li>
+            <li> w: <a href="http://www.github.com">www.github.com/</a></li>
+          </ul>
+        </strong>
+
+      </div>
+      <div class="col-sm-8 text-left">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">My Profile</a></li>
+          <li><a data-toggle="tab" href="#menu1">Ideal Job</a></li>
+          <li><a data-toggle="tab" href="#menu2">Personal Profile</a></li>
+          <li><a data-toggle="tab" href="#menu3">Project Idea</a></li>
+          <li><a data-toggle="tab" href="#menu4">Reference List</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>Personal Information</h3>
+
+            <p>A thirst for knowledge and a desire to make a meaningful change in my life led me to choose this degree.
+              I believe IT to be a field in which there are endless opportunities for learning, development and growth.
+              Finding myself drawn to the mixture of technical, theoretical and creative problem-solving skills that is
+              required to be successful in IT, I finally decided to pursue study in the Bachelor of Information
+              Technology. </p>
+
+            <p> I am originally from a small town in the semi-desert region of South Africa called Calvinia. The town
+              itself garnered its name from French religious reformer Jean Calvin (Frandsen,D 2013) and the Dutch
+              Reformed Church is still one of the integral characteristics of the town’s life in way of religious
+              instruction, social gatherings, and general meeting place. </p>
+
+            <p>When I was about seven years old my parents decided to move to New Zealand for better work and
+              educational opportunities for my sister and I. Though I was removed from my country of birth, my parents
+              ensured that we still understood the Afrikaans language, written and spoken as well as the customs, food,
+              and music of our culture. Afrikaans was my first language and when I moved to New Zealand, I learnt how to
+              speak English. Though it was a difficult transition moving to a foreign country, unable to communicate
+              with anyone, the skills in attaining a new language allowed me the ability to see that with hard work you
+              can overcome major obstacles in life. </p>
+
+            <p>At the age of twelve I decided to take up piano, and at that point, becoming a pianist became my sole
+              desire. I eventually got accepted into the Queensland Conservatorium Griffith University in South Bank
+              Brisbane which is when I moved to Australia to undertake tertiary studies. After spending so much of my
+              life focused on one single goal of becoming a pianist, I realised I had not explored other avenues of
+              interest which led me to take up martial arts and subsequently that has become a favourite hobby of mine.
+              In particular I have been drawn to the grappling martial arts such as Brazilian Jiu Jitsu and Freestyle
+              Wrestling. </p>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <img class="martialartsimage" src="jiujitsumidwaycomp.png" alt="martialartscompetition" />
+              </div>
+              <div class="col-sm-6">
+                <img class="martialartsimage" src="jiujitsucompfinal.png" alt="martialartscompetition" />
+              </div>
+            </div>
+            <br />
+            <i>Pictured here in the black Gi is me in a Queensland State competition in Brisbane. (Some people say
+              Brazilian Jiu Jitsu is akin to involuntary yoga...I would tend to agree)</i>
+            <hr />
+            <h3>Interest in IT</h3>
+            <p>I have two main interests in IT, building and designing intuitive and well-designed websites and
+              applications for businesses as a Front-End Developer. My other interest is in data science as I love the
+              idea of making sense of large quantities of data that I am then able to present in useful and meaningful
+              ways.</p>
+
+            <p>Though these are my interests currently, I am very much looking forward to the journey of discovery that
+              happens when studying to see what other areas of IT interest me as I am keen to not limit myself as I did
+              in my prior degree. </p>
+
+            <p>My interest in IT arose from the enjoyment I find in being handed a new piece of technology and figuring
+              out through trial and error how it works. Whether that be a new phone, a new game, music recording
+              software or Bluetooth to connect to a car, I always felt as though it was a fun challenge. My desire to
+              work in this field has been pushed further with the arrival of my daughter and having already accomplished
+              my career goals as pianist. I want to work in an area which is not static and where I can be challenged
+              mentally and creatively. Moreover, it is important for me to set an example for my daughter. I believe it
+              is important for young children to see their parents working towards their goals so that they can learn to
+              set and achieve their own. I hope that as my daughter grows and she sees me studying in the evenings that
+              it will instil a love of learning in her as it did me when I was growing up and seeing my parents’ study.
+            </p>
+
+            <p>RMIT was my university of choice because of its attitude towards adult learners, and the flexibility of
+              the course. The fact that I am able to start the course doing one subject at a time means that I can spend
+              valuable time with my daughter during the day but also continue to better myself and develop my skills in
+              the evenings to have a better and more secure financial future as well as having a job I am passionate
+              about and that can challenge me on many levels. On online forums that I have read over the years in
+              relation to the best tech universities in Australia, RMIT has always come up as a university that teaches
+              practical skills and prepares you well for the real world in IT.</p>
+
+            <p>My IT experience is limited to none. Apart from building a few websites for family and friends with tools
+              such as XAMPP, MySQL, WordPress and completing a few courses on Code Academy, I would say my IT experience
+              is very little.</p>
+
+            <p>During this degree I expect to learn practical skills and theoretical knowledge to prepare myself for a
+              future in IT. Learning how to work well as a team member and being taught the most up to date technologies
+              for things such as team work, collaboration, cloud computing, libraries etc. With an overarching goal of
+              becoming a Front-End Developer I expect the course to effectively prepare me to ‘learn how to learn’. IT
+              is such a large industry and there are so many avenues to explore that it would be impossible to cover it
+              all in one life time let alone in one degree, however, I believe that if a person is equipped with the
+              right skills and knows where to find the right tools, they will be able to build upon what they have
+              learnt in a degree and be successful in the workplace and in life.</p>
+
+
+          </div>
+
+          <div id="menu1" class="tab-pane fade">
+            <h3>Ideal Job</h3>
+            <div class="row">
+              <div class="col-sm-6 job-ad-container">
+                <img src="ideal-job-ad.png" class="ideal-job-ad" alt="job ad" />
+                <div class="job-ad-overlay">
+                  <div class="job-ad-text">Job Ad</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <p>This position appeals to me because as a Senior Front-End developer you can have a lot of input into
+                  building an intuitive website using the latest UI and UX principles and software delivery processes.
+                  In this position you are able to work alongside a variety of people including working closely with
+                  other developers, business analysts, project managers and business clients to deliver a product that
+                  meets their needs. Working as a Senior Front-End Developer would be a varied and creative role that
+                  utilises not only programming skills but also creative problem solving, design elements, management
+                  and planning methodologies as well as people skills.</p>
+
+                <p>For this role I would need a Bachelor of IT, Computer Science or similar. Specifically, as a Senior
+                  Developer I will have to have a minimum of four years’ experience as a Front-End or Full Stack
+                  Developer. I would need the ability to manage and teach Junior Developers. I would need leadership and
+                  motivational skills as well as being able to convey ideas of a project in such a way that a
+                  non-technical person can understand it. I would need to have been working in a larger corporation and
+                  be comfortable building secure and large-scale projects. Ideally, I would be familiar with all of the
+                  modern JS frameworks and have a stronger preference for one (e.g., React or Vue), however each project
+                  may need a different approach and a different framework that would better suit the business
+                  requirements. Familiarity with modern software application development technologies including
+                  in-browser state management, web APIs, DevOps, CI/CD integration and unit testing as well as Agile
+                  e.g. (Scrum) methodology. </p>
+
+              </div>
+            </div>
+
+
+
+
+            <p>I currently hold a Bachelor of Music in classical piano and a Cert IV in TESOL. I have over ten years’
+              experience as a music educator and as a choral accompanist and chapel organist. Though vastly different
+              subjects to IT, I believe that there exists a crossover of skills such as organisation, discipline,
+              problem solving, where one is able to operate in the intersect of industries. </p>
+
+            <p>This idea is summed up well in a blog post by, Clements, B & Bhagwan, K (2015, para. 1) ‘Music is both an
+              art and a science, and music and science are closely related. Both use mathematical principles and logic,
+              blended with creative thinking and inspiration to arrive at conclusions that are both enlightening and
+              inspirational. It could be said that SCIENCE IS THE MUSIC OF THE INTELLECT, AND MUSIC IS THE SCIENCE OF
+              THE HEART’.</i> </p>
+
+            <p> My plan will be to complete a Bachelor of Information Technology while at the same time doing small
+              websites for friends and family’s businesses that I can use to build up a portfolio of work on my personal
+              GitHub. Once I have gained more confidence and learnt more skills, I plan to move onto creating small
+              applications, widgets and templates that I could then launch on platforms such as Themeforest, Envanto,
+              Google Play store etc. I would also contribute to open-source projects of interest, such as Big Blue
+              Button which is an open-source educational tool that I have used as a music teacher in 2020. Once I have
+              graduated, I would then use the tertiary qualification backed up by my GitHub profile as well as my work
+              experience as a musician to find a role as a Graduate or Junior Software Developer. Initially, I would try
+              to find work as a Full-Stack Developer so that I have thorough understanding of both Back-End and
+              Front-End development. In my experience, a lot of learning comes from skills acquired on the job so I
+              would be keeping up with learning from Senior Developers in the team, reading articles relevant to the IT
+              industry as well as tech blogs. I would avail myself of any opportunities within the company I find myself
+              in as well as pursuing professional certificates that I may find useful or necessary along the way. </p>
+
+          </div>
+          <div id="menu2" class="tab-pane fade">
+
+            <h3>Personal Profile</h3>
+            <a href="https://eml.usc.edu/leadership-style-quiz" target="_blank">Leadership Style</a>
+            <br>
+            <br>
+            <strong>Postmodern Leader</strong>
+            <p>
+              You understand that leadership is both an art and a science. More than most, you recognize the joy
+              available in the role of a leader. The pleasure of leadership is realized through the transformation of
+              society and the realization of human potential. Leadership is an action that brings you greater
+              self-awareness. Your keen awareness helps others see their own life in a new light. You help others
+              realize the empowerment that comes from creating the future with others. Learn more about the postmodern
+              leader from the article, The Art of Leadership.
+              Your leadership style is a valuable asset for improving your career prospects. A leadership program can
+              help you bring evidence-based practices to your work, adding value for your employer. Consider
+              pre-qualifying for USC's EML program.
+            </p>
+            <hr>
+            <a href="https://openpsychometrics.org/tests/IPIPBFFM" target="_blank">Big 5 Factiors Quiz</a>
+            <br>
+            <br>
+            <strong>Big 5 Factors</strong>
+            <p>Results summary
+              Your results from the IPIP Big Five Factor Markers are in the table below. The table contains a raw score
+              and also a percentile, what percent of other people who have taken this test that you score higher than.
+            </p>
+            <img src="big-5-factors.png" class="big-5-factors" alt="big 5 factors quiz results" />
+            <hr>
+
+            <div class="row personality-row">
+              <!--custom class-->
+
+              <div class="col-sm-4">
+                <a href="https://www.16personalities.com/intj-personality" target="_blank">Myers-Briggs Type</a>
+                <img src="intj-architect.png" class="intj-personality" alt="myers briggs results intj" />
+
+              </div>
+              <div class="col-sm-8 personality-container">
+
+                <strong>Personality type: Architect (INTJ-A)</strong>
+                <p>Role: Analyst
+                  Strategy: Confident Individualism
+                  It can be lonely at the top. As one of the rarest personality types – and one of the most capable –
+                  Architects (INTJs) know this all too well. Rational and quick-witted, Architects may struggle to find
+                  people who can keep up with their nonstop analysis of everything around them.</p>
+
+                <p>Scoring fairly low in extroversion in the Big 5 factors and in the Myers-Briggs Type I think that a
+                  challenge will be making sure that I make the effort to engage with other team members. Asking simple
+                  questions like how they are going and asking questions about themselves can be a good way to break the
+                  ice and to help myself and others feel more comfortable.
+                </p>
+
+                <p>In the Big 5 personality traits quiz I have scored higher in areas such as emotional stability and
+                  for my leadership style it is written “Your keen awareness helps others see their own life in a new
+                  light.” As a teacher I am definitely passionate about seeing other people succeed as well. In a group
+                  setting this would be advantageous because if anyone is confused or unsure about what to do, I would
+                  definitely jump in and help. Explaining something to others is also a great way to learn and deepen
+                  our understanding of a subject. (Effectivology 2021).</p>
+
+                <p> As an INTJ-A according to Myers-Briggs I often think my way of approaching a task is the most
+                  logical choice and, in my previous degree when doing group assignments, I had a tendency to want to
+                  take over what was happening. When forming a team, I think it would be wise if I could team up with
+                  other people who I see regularly contributing and posting in the discussion forums as it might
+                  indicate their overall interest and dedication to the subject.</p>
+
+              </div>
+            </div>
+
+            <br />
+
+
+          </div>
+
+          <div id="menu3" class="tab-pane fade">
+
+            <h1>Project Idea</h1>
+            <h3>Overview</h3>
+            <p>My project idea is an online application to facilitate participation in class action lawsuits. Users will
+              register and enter the details of their claim and have it assessed by a professional to determine if there
+              are grounds for a class action lawsuit. If grounds exist, the user will be connected with other users who
+              have a similar claim. The group of plaintiffs will raise money in a crowdfunding style and will be
+              introduced to lawyers (also registered users) who specialise in this type of lawsuit e.g., claims against
+              pharmaceutical companies. The crowdfunding model would also be used on the lawyers’ side if they need
+              other lawyers and legal professionals to help with research and legal discovery.
+
+            </p>
+
+            <h3>Motivation</h3>
+
+            <p>An app to facilitate participation in class action lawsuits using a crowdfunding model could make the
+              process of litigation easier. This is of importance because according to a 2017 study undertaken by Heidi
+              Shierholz the president of the Economic Policy Institute "Consumers fare better under class actions than
+              arbitration." (Shierholz, 2017) this would make the project idea meaningful in this context as it would
+              help to empower people and give the consumer more advantages.
+
+              <p>Throughout the world class action lawsuits are filed each year, in Australia alone “it was found that
+                between 4 March 1992 and 30 June 2019, a total of 634 class action lawsuits were filed in Australia.
+                This equates to an average of 23.4 class actions per year” (Newbold et al., 2020). When we look to the
+                United States, we find that, “more than 10,000 new class actions are filed each year in the federal and
+                state courts.” (Polkes and Lender, 2020). Based on these statistics and the number of users a class
+                action law suit would generate, I believe there is a need for an application that can streamline the
+                process of class action lawsuits using a crowdfunding model. </p>
+
+
+              <h3>Description</h3>
+              <p>The application will be web-based and be accessible via any web-enabled device. All users of the system
+                will have to register and will be part of one or more of the following groups. </p>
+
+              <p>There will be site administrators who would be responsible for the administration side of the site
+                including users and security of users’ data. Content managers would be responsible for the site’s
+                contents and there would be professional users including lawyers, scientists, experts etc. Finally, you
+                would have the users who are the potential plaintiffs.</p>
+
+              <p>Further features of the site include, a public facing page explaining the purpose and mission statement
+                of the site and services. There will be secured pages accessible only by those who are members with
+                secure logins. There will be a registration process whereby people set up a username and password to
+                create their profile. This process will also securely capture their email address. Web forms will be
+                used for the registration of each user and each user’s registration process will be different and
+                determine what privileges the user will have on the site. As well as having a profile page that they can
+                set up, users can also view the status of their lawsuit as well as any other pending lawsuits on the
+                site. There would be details of “in flight” and past class action lawsuits as well. Details of
+                professionals (lawyers and other legal professionals) and their track records will also be included so
+                users can get to know their lawyers better.</p>
+
+              <p>During registration users would also need to accept a privacy policy for things such as accepting that
+                personal data may be shared with other users.</p>
+
+              <p>Security features will include things such as Multi Factor Authentication tools such as QR codes,
+                Google Authenticator or similar technology. There would be a validation process for lawyers to verify
+                their credentials as a lawyer. A one-time link and token to verify accounts can also be used for
+                security purposes.</p>
+
+              <p>Users that are not directly linked with a case and are just visiting the website without creating a
+                profile will be able to make donations towards cases that they are passionate about and want to support.
+                This would be somewhat similar to the GoFundMe model. </p>
+
+              <p>Payment gateways would be used to enable users to make online payment with payment methods such as
+                credit cards, Paypal and Stripe.
+                For official users there will be IM, video conferencing and file sharing features, and for all users
+                there will be an open forum or discussion boards where users can communicate securely with each other.
+                This discussion board may need moderators.
+
+              </p>
+
+              <p>There will also be a contact form on the website.</p>
+
+              <p> Issues we may run into developing this as a project for the semester would be learning how to deploy
+                the needed infrastructure. Lacking sufficient coding knowledge to actually make the entire application,
+                though aspects of it could be built such as the basic website layout, registration forms and the listing
+                of cases. There could also be a lack of UI/UX knowledge in how to make a really good-looking product.
+              </p>
+
+
+              <h3>Technologies</h3>
+              <ul>
+                <li>Software development tools, including a Git repository (Desktop, 2018), IDE or code editor (Veracode
+                  n.d.), web development tools, a local installation of Docker (Solanki, 2018) to host local development
+                  services.</li>
+                <li>A web application framework suitable for use with desktop browsers, mobile devices and possibly
+                  deployment as a mobile app (via tools such as React, Vue, Angular, Vue.js) for support and integration
+                  across a range of devices.(Vyas n.d.)</li>
+                <li>A server-side language & framework for communicating with the frontend, implement business logic and
+                  communicating with the data base.</li>
+                <li>A choice of infrastructure to host the service, for example AWS Lambdas, Microsoft Azure, Oracle
+                  (Turner, 2021), VPS hosting (Wood, 2020) or self-hosted.</li>
+                <li>A database solution such as MySQL (Enfroy, 2021) to collect all of the data.</li>
+                <li>A web application server & caching solution depending on the infrastructure chosen such as Apache or
+                  Nginx. (Thakur, 2020)</li>
+                <li>Kanban boards or WBS tools (Naydenov, 2019) for project management to keep the project on track and
+                  meeting all the deadlines.</li>
+              </ul>
+
+              <h3>Skills Required</h3>
+
+              <p>The skills required for this project will be HTML, CSS, JavaScript and Bootstrap. It would need a
+                mixture of Senior and Junior to Mid-Level Developers to implement all of the features. You would need a
+                Front-End Developer who is quite experienced with UI/UX and web design and a Back-End Developer who is
+                skilled in a language such as Node.js or similar. You would need a server admin and software such as
+                Docker, AWS Lambda for hosting services. You would also need project planning tools and perhaps a
+                Project Manager or a Developer familiar with project planning methodologies.</p>
+
+              <h3>Outcome</h3>
+
+              <p>If the project is successful, people will be empowered to hold companies, governments, or corporations
+                accountable for their products and services. If successful people will not be deterred by cost, or poor
+                litigation but will be granted the opportunity to have the best possible lawyer for their case at a cost
+                that they can afford. Lawyers will be connected with other legal professions thus saving them time and
+                money in sourcing help and information independently. It will streamline the process of launching class
+                action lawsuits.</p>
+
+
+          </div>
+          <div id="menu4" class="tab-pane fade">
+            <h3>Reference List</h3>
+            <p>Clements, B & Bhagwan, K 2015, ‘The Relationship Between Music and Science’, bnbmusiclessons, blog post,
+              viewed 5 September 2021, < The Relationship between Music and Science (bnbmusiclessons.com)>.</p>
+
+            <p>Desktop, N 2018, ‘What is Git & Why Should You Use It’, The Noble Desktop, blog post, 21 September,
+              viewed 11 September 2021, < https://www.nobledesktop.com/blog/what-is-git-and-why-should-you-use-it>
+            </p>
+
+            <p>Do class actions exist in the United Kingdom? Not Really! Should they?, n.d., EdmondsMarshallMcMahon,
+              viewed 12 September 2021, < https://www.emmlegal.com/publications/class-actions/>
+            </p>
+
+            <p>Effectiviology, The Protégé Effect: How You Can Learn by Teaching Others, viewed 8 September 2021, <
+                https://effectiviology.com/protege-effect-learn-by-teaching/>.</p>
+
+            <p>Frandsen, D 2013, The Karoo, South Africa, viewed 8 September 2021,
+              <https://www.karoo-southafrica.com/hantam-and-roggeveld/calvinia/history-of-calvinia/>.</p>
+
+            <p>Naydenov, P 2019, ‘Work breakdown structure in Project Management with Kanban’, Kanbanize, blog post
+              February 16, viewed 11 September 2021, <
+                https://kanbanize.com/blog/how-work-breakdown-structure-improves-productivity/>
+            </p>
+
+            <p>
+              Newbold, B, Taylor, D, Avis, J, Aiolfi, R, Wong, J and McLachlan, B, 2020, Class/Collective actions in
+              Australia: overview, viewed 12 September 2021, < https://uk.practicallaw.thomsonreuters.com/3-617-6440>
+            </p>
+
+
+            <p>Polkes, J.D. and Lender, D.J., 2020, Class Actions 2021, viewed 12 September 2021, <
+                https://www.weil.com/~/media/files/pdfs/2021_class-actions_united-states.pdf>
+            </p>
+
+            <p>Shierholz, H, 2017, Economic Policy Institute, Correcting the record- Consumers fare better under class
+              actions than arbitration, viewed 12 September 2021, <
+                https://www.epi.org/publication/correcting-the-record-consumers-fare-better-under-class-actions-than-arbitration/>
+            </p>
+
+            <p>Solanki, R 2018, ‘Why is Docker Useful for Development’, Bacancy Technology, blog post 11 April, viewed
+              11 September 2021, < https://www.bacancytechnology.com/blog/advantages-of-using-docker-for-development>
+            </p>
+
+            <p>Thakur, A 2020, ‘7 Open-Source Web Servers for Small to Large Sites’, Geekflare, blog post 10 March,
+              viewed 11 September 2021, < https://geekflare.com/open-source-web-servers/>
+            </p>
+
+            <p>Veracode n.d., What Is An Integrated Development Environment? (IDE), Veracode, viewed 12 September 2021,
+              < https://www.veracode.com/security/integrated-development-environment>
+            </p>
+
+            <p>Vyas, I 2021, ‘10 Best Web Development Frameworks in 2021 (Frontend & Backend)’, Citrusbug, blog post 27
+              April, viewed 11 September 2021, < https://citrusbug.com/article/best-web-development-frameworks>
+            </p>
+
+            <p>Wood, K 2020, ‘Benefits of VPS Hosting’, Hostgator, blog post 16 March, viewed 11 September 2021, <
+                https://www.hostgator.com/blog/vps-hosting-benefits/>
+            </p>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="col-sm-2 sidenav">
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <img src="cute-cat-coffee.jpg" class="logo-image" height="50" />
+  </footer>
+
+</body>
+
+</html>
