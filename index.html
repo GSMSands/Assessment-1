@@ -47,17 +47,6 @@
       padding: 15px;
     }
 
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-
-      .row.content {
-        height: auto;
-      }
-    }
-
     img {
       margin-top: 2em;
       margin-bottom: 2em;
@@ -78,7 +67,7 @@
 
     .martialartsimage {
       padding: 0.5em;
-      height: 350px;
+      width: 100%;
       border-style: solid;
       border-width: medium;
       border-color: #BEB2C8;
@@ -103,6 +92,7 @@
       border-width: medium;
       border-color: #BEB2C8;
       margin: 20px 0 20px;
+      width: 50%;
     }
 
     .intj-personality {
@@ -193,6 +183,21 @@
     .tab-pane a {
       color: #BBC1DD
     }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+
+      .row.content {
+        height: auto;
+      }
+
+      .big-5-factors {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -217,16 +222,20 @@
     <div class="row content">
       <div class="col-sm-2 sidenav">
 
-        <img class="my-profile-picture" src="images/my-profile-picture.jpg" alt="my profile picture" />
-        <strong>Gesina Susanna Maria Sands
-          <ul>
-            <li> #: s3921234</li>
-            <li> e: <a href="mailto:s3921234@rmit.edu.au" target="_blank">s3921234@rmit.edu.au</a></li>
-            <li> w: <a href="https://github.com/GSMSands/Assessment-1" target="_blank">GitHub Repository</a></li>
-            <li> w: <a href="https://gsmsands.github.io/Assessment-1/" target="_blank">GitHub Pages</a></li>
-          </ul>
-        </strong>
-
+        <div class="row">
+          <div class="col-sm-12">
+            <img class="my-profile-picture" src="my-profile-picture.jpg" alt="my profile picture" />
+          </div>
+          <div class="col-sm-12">
+            <strong>Gesina Susanna Maria Sands
+              <ul>
+                <li> #: s3921234</li>
+                <li> e: <a href="mailto:s3921234@rmit.edu.au" target="_blank">s3921234@rmit.edu.au</a></li>
+                <li> w: <a href="http://www.github.com">www.github.com/</a></li>
+              </ul>
+            </strong>
+          </div>
+        </div>
       </div>
       <div class="col-sm-8 text-left">
         <ul class="nav nav-tabs">
@@ -277,10 +286,10 @@
                 Wrestling. </p>
 
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                   <img class="martialartsimage" src="images/jiujitsumidwaycomp.png" alt="martialartscompetition" />
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                   <img class="martialartsimage" src="images/jiujitsucompfinal.png" alt="martialartscompetition" />
                 </div>
               </div>
@@ -351,13 +360,13 @@
             <div class="tab-pane-content">
               <h3>Ideal Job</h3>
               <div class="row">
-                <div class="col-sm-6 job-ad-container">
+                <div class="col-sm-12 col-md-6 job-ad-container">
                   <img src="images/ideal-job-ad.png" class="ideal-job-ad" alt="job ad" />
                   <div class="job-ad-overlay">
                     <div class="job-ad-text">Job Ad</div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="ideal-job-text">This position appeals to me because as a Senior Front-End developer you can
                     have a lot of input
                     into
@@ -452,14 +461,14 @@
               <hr>
 
               <div class="row personality-row">
-               
 
-                <div class="col-sm-4">
+
+                <div class="col-md-12 col-lg-4">
                   <a href="https://www.16personalities.com/intj-personality" target="_blank">Myers-Briggs Type</a>
                   <img src="images/intj-architect.png" class="intj-personality" alt="myers briggs results intj" />
 
                 </div>
-                <div class="col-sm-8 personality-container">
+                <div class="col-md-12 col-lg-8 personality-container">
 
                   <strong>Personality type: Architect (INTJ-A)</strong>
                   <p>Role: Analyst
